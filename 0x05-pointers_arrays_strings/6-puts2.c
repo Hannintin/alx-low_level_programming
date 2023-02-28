@@ -1,21 +1,17 @@
 #include "main.h"
-
 /**
- * puts2 - print the values in even notation
+ * puts2 - prints every other character of a string
  *
- * @str: print in even notation
+ * @str: char to check
+ *
+ * Return: 0 is success
  */
-
 void puts2(char *str)
 {
-	int i, count = 0;
+	int string;
 
-	for (i = 0; str[i]; i += 1)
-		if (str[i] != '\0')
-			count += 1;
-		else
-			break;
-	for (i = 0; i < count; i += 2)
-		_putchar(str[i]);
+	for (string = 0; str[string] != '\0'; string++)
+	if (string % 2 == 0)
+		_putchar(str[string]);
 	_putchar('\n');
 }
