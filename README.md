@@ -1,1 +1,1 @@
-0x00 c-Hello world
+argc argv
